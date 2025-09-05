@@ -3,6 +3,7 @@ import copy
 from business_object.statistic import Statistic
 from abc import ABC, abstractmethod
 
+
 class AbstractPokemon(ABC):
     """
     A Pokemon
@@ -20,7 +21,7 @@ class AbstractPokemon(ABC):
         self._stat_current: Statistic = stat_current
         self._level: int = level
         self._name: str = name
-        #self._type: str = type_pk
+        # self._type: str = type_pk
 
     # -------------------------------------------------------------------------
     # Methods
@@ -34,7 +35,7 @@ class AbstractPokemon(ABC):
         Returns :
             float : the multiplier
         """
-       pass
+        pass
 
     def level_up(self) -> None:
         """
